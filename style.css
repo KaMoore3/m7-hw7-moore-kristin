@@ -138,6 +138,7 @@
     color: var(--danger-color);
     position: relative;
     cursor: pointer;
+    display: inline-block;
   }
 
   /* underline span on hover/focus */
@@ -155,9 +156,27 @@
   /* styling for tooltip bubble */
   span.tooltip span {
     display: none;
+    width: 150px;
+    background-color: #042d2f;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
   }
-  
+
   /* styling for tooltip bubble arrow */
   span.tooltip span::after {
     content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
   }
